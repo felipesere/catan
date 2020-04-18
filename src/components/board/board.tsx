@@ -1,11 +1,10 @@
 import * as React from 'react';
-import { connect } from 'react-redux';
 
 import Edge from '../edge/edge';
 import Hexagon from '../hexagon/hexagon';
 import Vertex from '../vertex/vertex';
 
-import { ICatanState, IHexagon, IRoad, ITown } from '../../types';
+import { IHexagon, IRoad, ITown } from '../../types';
 import './board.css'
 
 interface IBoardProps {
@@ -14,13 +13,7 @@ interface IBoardProps {
     townList: ITown[];
 };
 
-const mapStateToProps = (state: ICatanState, ownProps: IBoardProps) => ({
-    hexList: state.allHexagons,
-    roadList: state.roads,
-    townList: state.towns
-});
-
-function Board(props: IBoardProps) {
+export function Board(props: IBoardProps) {
     const hexTiles = props.hexList.map((hex, i) => {
         return (
             <Hexagon
@@ -66,4 +59,3 @@ function Board(props: IBoardProps) {
     );
 }
 
-export default connect<IBoardProps>(mapStateToProps)(Board);

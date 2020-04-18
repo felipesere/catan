@@ -82,12 +82,6 @@ export interface ICatanState {
 
 export interface IPlayerScore extends IPlayerResources {
     playerName: string;
-    /* playerColor: Color;
-    bricks: number;
-    wheat: number;
-    ore: number;
-    sheep: number;
-    lumber: number; */
     cards: ICard[];
     roads: IRoad[];
     towns: ITown[];

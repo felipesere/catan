@@ -1,8 +1,6 @@
 import * as React from 'react';
 import './vertex.css';
 
-// import houseSVG from '../../images/icons/house.svg';
-
 import { Color, IVertex } from '../../types';
 
 interface IVertexProps {
