@@ -1,4 +1,4 @@
-$hexBorderColor: #999;
+@import '../../styles/variables.scss';
 
 .desert{
  background: url(../../images/hex-desert.jpg);
@@ -21,8 +21,6 @@ $hexBorderColor: #999;
 
 .hexagonal {
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  background-size: 100px;
-  width: 115px;
-  height: 100px;
+  background-size: $fullHexWidth;
 }
 

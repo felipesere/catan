@@ -18,9 +18,7 @@
 
 .hexagonal {
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  background-size: 100px;
-  width: 115px;
-  height: 100px; }
+  background-size: 110px; }
 
 .hex {
   position: absolute;
