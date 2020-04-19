@@ -10,8 +10,11 @@ interface IHexagonProps extends IHexagon {
 
 export default function Hexagon(props: IHexagonProps) {
     return (
-        <div>
-            <div className={`${props.terrain} hex hex-${props.index} hexagonal`}/>
+        <div className={`hex hex-${props.index}`}>
+            <div className={`${props.terrain} hexagonal`}/>
+            <span className={"die-roll"}>
+                {props.dieRoll}
+            </span>
         </div>
     )
 };

@@ -49,12 +49,14 @@ export function Board(props: IBoardProps) {
             <div className="hex-layer">
                 {hexTiles}
             </div>
+            {/*
             <div className="edge-layer">
                 {edges}
             </div>
             <div className="vertex-layer">
                 {vertices}
             </div>
+            */}
         </div>
     );
 }

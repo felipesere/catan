@@ -13,6 +13,11 @@ const range = (amount: number): number[] => {
     return Array.from(Array(amount).keys())
 }
 
+const randomBetween = (min: number, max: number): number => {
+    const delta = max - min;
+    return min + Math.floor(Math.random() * delta)
+}
+
 function App() {
     return (
         <div className="App">
@@ -21,7 +26,7 @@ function App() {
             </header>
             <Board hexList={range(19).map((i) => ({
                 terrain: random(),
-                dieRoll: i,
+                dieRoll: randomBetween(2, 12),
             }))}
                    roadList={[]} townList={[]}/>
         </div>
